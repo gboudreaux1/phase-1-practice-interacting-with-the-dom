@@ -1,11 +1,3 @@
-// function minusButton() {
-//     const newNumber = document.getElementById('counter')
-//     newNumber.textContent += 1   
-// }
-
-
-
-
 const formElement = document.querySelector('form')
 
 function formSubmit(e) {
@@ -25,3 +17,17 @@ formElement.addEventListener('submit', formSubmit)
 const minusElement = document.getElementById('minus')
 const plusElement = document.getElementById('plus')
 const counterElement = document.getElementById('counter')
+
+const decrement = () => counterElement.textContent -= 1 
+
+
+minusElement.addEventListener('click', decrement)
+
+const increment = () => counterElement.textContent += 1 
+
+
+plusElement.addEventListener('click', increment)
+
+
+
+
